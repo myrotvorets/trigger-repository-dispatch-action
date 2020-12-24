@@ -1,14 +1,22 @@
-name: 'action-name'
-description: 'Action description'
-author: 'Myrotvorets'
-#inputs:
-
-#outputs:
-
+name: Trigger Repository Dispatch
+description: GitHub action to trigger a repository_dispatch event
+author: Myrotvorets
+inputs:
+  token:
+    description: A Personal Access Token with repo scope. Do not use GITHUB_TOKEN.
+    required: true
+  repo:
+    description: A repository (owner/repo) to send the dispatch to
+    required: false
+  type:
+    description: A custom webhook event name
+    required: true
+  payload:
+    description: An optional JSON payload with extra information about the webhook event that your action or worklow may use. Up to 10 top-level properties are allowed
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'
-
-#branding:
-#  color: blue
-#  icon: info
+branding:
+  color: blue
+  icon: activity

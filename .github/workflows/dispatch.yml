@@ -1,0 +1,17 @@
+name: Dispatch Handler
+
+on:
+  repository_dispatch:
+    type:
+      - ci
+
+jobs:
+  dispatcher:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Payload params
+        run: |
+          echo "Ref: ${{ github.event.client_payload.ref }}"
+          echo "Commit: ${{ github.event.client_payload.sha }}"
+
