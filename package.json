@@ -1,6 +1,6 @@
 {
   "name": "@myrotvorets/trigger-repository-dispatch-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GitHub action to trigger a repository_dispatch event",
   "main": "lib/main.js",
   "scripts": {
