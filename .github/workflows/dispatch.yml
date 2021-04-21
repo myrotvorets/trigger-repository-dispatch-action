@@ -14,4 +14,3 @@ jobs:
         run: |
           echo "Ref: ${{ github.event.client_payload.ref }}"
           echo "Commit: ${{ github.event.client_payload.sha }}"
-

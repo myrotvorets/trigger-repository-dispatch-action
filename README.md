@@ -9,7 +9,7 @@ Triggers a [`repository_dispatch`](https://docs.github.com/en/free-pro-team@late
 | `token`   |                     | **YES**   | A [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) with `repo` scope |
 | `repo`    | `github.repository` | No        | The name of the repository to send the event (`owner/repo`) |
 | `type`    |                     | **YES**   | A custom webhook event name |
-| `payload` |                     | No        | JSON payload with extra information about the webhook event that your action or worklow may use. GitHub API allows for a maximum of 10 top-level properties |
+| `payload` |                     | No        | JSON payload with extra information about the webhook event that your action or workflow may use. GitHub API allows for a maximum of 10 top-level properties |
 
 ## Example usage
 
