@@ -16,7 +16,7 @@
   "devDependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
-    "@myrotvorets/eslint-config-myrotvorets-ts": "^2.2.5",
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^2.5.0",
     "@octokit/request-error": "^2.0.5",
     "@vercel/ncc": "^0.28.2",
     "eslint": "^7.19.0",
