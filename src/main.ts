@@ -20,7 +20,7 @@ function run(): void {
         }
 
         const octokit = getOctokit(inputs.token);
-        octokit.repos
+        octokit.rest.repos
             .createDispatchEvent({
                 owner,
                 repo,
