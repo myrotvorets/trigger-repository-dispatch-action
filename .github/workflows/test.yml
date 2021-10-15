@@ -14,7 +14,7 @@ jobs:
     if: ${{ !contains(github.event.head_commit.message, '[ci skip]') || github.event_name == 'workflow_dispatch' }}
     steps:
       - name: Check out the source code
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.1
@@ -40,7 +40,7 @@ jobs:
 
     steps:
       - name: Check out the source code
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - id: action
         uses: ./
