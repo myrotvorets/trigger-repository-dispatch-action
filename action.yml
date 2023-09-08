@@ -15,7 +15,7 @@ inputs:
     description: An optional JSON payload with extra information about the webhook event that your action or worklow may use. Up to 10 top-level properties are allowed
     required: false
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
 branding:
   color: blue
