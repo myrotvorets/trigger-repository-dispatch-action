@@ -2,13 +2,14 @@ name: Dispatch Handler
 
 on:
   repository_dispatch:
-    type:
+    types:
       - ci
 
 jobs:
   dispatcher:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
     steps:
       - name: Payload params
         run: |
