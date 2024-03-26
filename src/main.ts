@@ -27,7 +27,8 @@ function run(): void {
                 event_type: inputs.type,
                 client_payload: inputs.payload ? (JSON.parse(inputs.payload) as Record<string, unknown>) : undefined,
             })
-            .catch((e: RequestError) => {
+            .catch((err: unknown) => {
+                const e = err as RequestError;
                 if (e.status === 404) {
                     setFailed(
                         `${e.message}\n` +
