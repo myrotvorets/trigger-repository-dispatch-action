@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/myrotvorets/trigger-repository-dispatch-action#readme",
   "engines": {
-    "node": "22"
+    "node": "24"
   }
 }
