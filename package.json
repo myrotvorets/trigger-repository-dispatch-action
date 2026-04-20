@@ -21,7 +21,7 @@
     "@octokit/request-error": "^7.0.0",
     "@vercel/ncc": "^0.38.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^6.0.0"
   },
   "repository": {
     "type": "git",
